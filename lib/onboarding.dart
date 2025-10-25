@@ -63,27 +63,27 @@ class _OnboardingState extends State<Onboarding> {
         },
         showSkipButton: true,
         skip: Text(
-          "skip",
+          "Skip",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
-            color: Colors.blue,
+            color: Colors.indigo,
           ),
         ),
-        next: Icon(Icons.arrow_forward, color: Colors.blue),
+        next: Icon(Icons.arrow_forward, color: Colors.indigo),
         done: Text(
           "done",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
-            color: Colors.blue,
+            color: Colors.indigo,
           ),
         ),
         dotsDecorator: DotsDecorator(
           size: Size.square(10.0),
           activeSize: Size(20.0, 10.0),
           color: Colors.black,
-          activeColor: Colors.blue,
+          activeColor: Colors.indigo,
           spacing: EdgeInsets.symmetric(horizontal: 3.0),
           activeShape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25.0),
