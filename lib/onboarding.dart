@@ -23,29 +23,29 @@ class _OnboardingState extends State<Onboarding> {
         pages: [
           PageViewModel(
             titleWidget: Text(
-              "Introduction",
+              "Welcome to EduLearn",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             body:
-                "With the Course Wala app, your learning journey is in your hands. Explore a wide variety of courses, from competitive exam prep to professional development and creative skills. Our easy-to-use interface, expert instructors, and flexible learning options make quality education accessible and affordable for everyone",
+                "Discover a new way to learn anytime, anywhere. Join thousands of learners upgrading their skills with interactive lessons and expert guidance.",
             image: Image.asset("images/first.jpg", height: 400, width: 400),
           ),
           PageViewModel(
             titleWidget: Text(
-              "This is first title",
+              "Interactive Learning",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             body:
-                "Write the more description of the page. Write the more description of the page. Write the more description of the page. Write the more description of the page. Write the more description of the page. ",
+                "Explore a wide range of subjects through videos, quizzes, and assignments designed to make learning fun and effective.",
             image: Image.asset("images/second.jpg", height: 400, width: 400),
           ),
           PageViewModel(
             titleWidget: Text(
-              "This is first title",
+              "Track Your Progress",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             body:
-                "Write the more description of the page. Write the more description of the page. Write the more description of the page. Write the more description of the page. Write the more description of the page. ",
+                "Monitor your learning goals and achievements with personalized dashboards and daily progress reports.",
             image: Image.asset("images/thired.jpg", height: 400, width: 400),
           ),
         ],
@@ -72,7 +72,7 @@ class _OnboardingState extends State<Onboarding> {
         ),
         next: Icon(Icons.arrow_forward, color: Colors.indigo),
         done: Text(
-          "done",
+          "Done",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
