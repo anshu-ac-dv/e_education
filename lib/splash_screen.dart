@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => Onboarding()),
@@ -42,11 +42,11 @@ class _SplashScreenState extends State<SplashScreen> {
                 letterSpacing: 1,
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             Text(
               "The best online course application for students.",
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 15,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic,
