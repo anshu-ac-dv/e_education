@@ -111,8 +111,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     return Column(
                       children: [
                         Container(
-                          height: 80,
-                          width: 80,
+                          height: 60,
+                          width: 60,
                           decoration: BoxDecoration(
                             color: catColors[index],
                             shape: BoxShape.circle,
@@ -124,7 +124,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           catName[index],
                           style: TextStyle(
                             fontSize: 16,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.bold,
                             color: Colors.black.withOpacity(0.7),
                           ),
                         ),
