@@ -8,6 +8,31 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
+  // Creating static data in lists.
+  List catName = [
+    "Category",
+    'Classes',
+    'Fress Course',
+    'BookStore',
+    'Live Classes',
+    'LeaderBoard',
+  ];
+  List<Color> catColors = [
+    Colors.yellow,
+    Colors.greenAccent,
+    Colors.blueAccent,
+    Colors.redAccent,
+    Colors.pinkAccent,
+    Colors.greenAccent,
+  ];
+  List<Icon> catIcons = [
+    Icon(Icons.category, color: Colors.white, size: 30),
+    Icon(Icons.video_library, color: Colors.white, size: 30),
+    Icon(Icons.assignment, color: Colors.white, size: 30),
+    Icon(Icons.store, color: Colors.white, size: 30),
+    Icon(Icons.play_circle_fill, color: Colors.white, size: 30),
+    Icon(Icons.emoji_events, color: Colors.white, size: 30),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,13 +99,38 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             padding: EdgeInsets.only(top: 20, left: 15, right: 15),
             child: Column(
               children: [
-                GridView(
+                GridView.builder(
+                  itemCount: catName.length,
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
                     childAspectRatio: 1.1,
                   ),
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: [
+                        Container(
+                          height: 80,
+                          width: 80,
+                          decoration: BoxDecoration(
+                            color: catColors[index],
+                            shape: BoxShape.circle,
+                          ),
+                          child: Center(child: catIcons[index]),
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          catName[index],
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black.withOpacity(0.7),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
                 ),
               ],
             ),
